@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './App.css';
 import Base from './components/Base'
 import Sauce from './components/Sauce'
 import CheckBox from './components/CheckBox'
