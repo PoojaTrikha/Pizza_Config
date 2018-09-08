@@ -75,11 +75,7 @@ class CheckBox extends Component {
                             )
                         })}
                     </div><br/>
-                    <RaiseButton
-                        type="submit"
-                        label="Add Selected Toppings"
-                        primary={true}
-                        style={buttonStyle}/>
+                    <button> type="submit" label="Add Selected Toppings"</button>
                 </form>
             </div>
         )

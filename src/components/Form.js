@@ -5,14 +5,17 @@ import CheckBox from './CheckBox'
 import {connect} from 'react-redux'
 import Toppings from '../actions/Toppings'
 import TurboDroneDelivery from './TurboDroneDelivery'
-
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 class PizzaForm extends Component{
 
 
 render() {
     return (
-        <form>
+        <MuiThemeProvider>
+        <form className="container" >
+            <h3>Select your Pizza!!!!</h3>
+            <br/>
             <Base/>
             <br/>
             <Sauce />
@@ -22,7 +25,7 @@ render() {
             <TurboDroneDelivery />
             <br/>
         </form>
-        
+         </MuiThemeProvider>
     )}
 }
 
