@@ -12,7 +12,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1> New Age Pizza</h1>
         <h1 className="App-title">Welcome to NewAgePizza</h1>
         <Base />
         <br />
