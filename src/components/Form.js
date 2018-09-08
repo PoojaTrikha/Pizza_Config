@@ -14,8 +14,6 @@ render() {
     return (
         <MuiThemeProvider>
         <form className="container" >
-            <h3>Select your Pizza!!!!</h3>
-            <br/>
             <Base/>
             <br/>
             <Sauce />

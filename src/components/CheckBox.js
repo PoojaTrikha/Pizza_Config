@@ -60,7 +60,7 @@ class CheckBox extends Component {
                     onSubmit={this
                     .handleSubmit
                     .bind(this)}>
-                    <label className="base-label">Select your Toppings(Maximum 3 allowed!)</label>
+                    <label className="base-label">Select your toppings maximum 3 allowed</label>
                     <div>
                         <br/> {toppings.map(pizzatopping => {
                             return (
