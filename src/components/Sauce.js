@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
-import {sauce} from '../data'
+import {sauceprice} from '../data'
 import Sauces from '../actions/Sauces'
 import '../styles/PizzaStyle.css'
 
@@ -34,7 +34,7 @@ class Sauce extends Component {
                                 <th>Name</th>
                                 <th>Price</th>
                         </thead>
-                        {sauce.map(sauce => {
+                        {sauceprice.map(sauce => {
                             return (
                                 <tbody>
                                     <tr key={sauce.id}>

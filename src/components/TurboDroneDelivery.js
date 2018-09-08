@@ -29,7 +29,7 @@ import '../styles/PizzaStyle.css'
 
         return (
             <div>
-                <label className="turbo-label">Turbo Drone Delivery?</label>
+                <label className="turbo-label">Turbo Drone, will cost extra 10%</label>
                 <input type={'checkbox'} onChange={this.handleChange}/>
                
 

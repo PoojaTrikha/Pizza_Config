@@ -1,4 +1,4 @@
-export const base = [
+export const baseprice = [
      {
         id: 1,
         name: '25cm NY Style',
@@ -14,7 +14,7 @@ export const base = [
     }
 ]
 
-export const sauce = [
+export const sauceprice = [
     {
         id: 1,
         name: 'White sauce',

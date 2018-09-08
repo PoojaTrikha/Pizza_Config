@@ -1,7 +1,7 @@
-import {DELIVERY} from './index'
+import {TURBODELIVERY} from './index'
 
 export default function TurboChecked(turbochecked) {
 
-    return {type: DELIVERY, payload:turbochecked}
+    return {type: TURBODELIVERY, payload:turbochecked}
 
 }

@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux'
 
 class PizzaPrice extends Component {
-
     render() {
         const price = Number(this.props.PizzaSelected.baseprice) + Number(this.props.PizzaSelected.sauceprice) + Number(this.props.PizzaSelected.toppings.length * 0.50)
         const turborprice = (0.1 * (Number(this.props.PizzaSelected.baseprice) + Number(this.props.PizzaSelected.sauceprice) + Number(this.props.PizzaSelected.toppings.length * 0.50)))
