@@ -8,9 +8,7 @@ class CheckBox extends Component {
     constructor(props)
     {
         super(props)
-        this.handleChange = this
-            .handleChange
-            .bind(this)
+        this.handleChange = this.handleChange.bind(this)
         this.state = {
             checkedtoppings: [],
             checked: false
@@ -21,6 +19,7 @@ class CheckBox extends Component {
 
         if (this.state.checkedtoppings.length >= 3) {
             event.target.checked = false
+            alert("You have reached the limit of selecting 3 toppings")
         }
 
         if (event.target.checked === true) {
@@ -37,16 +36,13 @@ class CheckBox extends Component {
             this.setState({checkedtoppings: filterdarray, checked: event.target.checked})
 
         }
-
-    }
-
+ }
     handleSubmit(event) {
         event.preventDefault()
         this.props.Toppings(this.state.checkedtoppings)
 
     }
-
-    render() {
+   render() {
         return (
             <div>
                 <form onSubmit={this.handleSubmit.bind(this)}>
