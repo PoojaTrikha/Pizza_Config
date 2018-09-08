@@ -9,13 +9,6 @@ const pics = [logo];
 
 class App extends Component {
 
-  handleSubmit() {
-    alert('Your order is successfully placed')
-    window
-      .location
-      .reload()
-  }
-
   render() {
     return (
       <div className="App">
@@ -25,8 +18,7 @@ class App extends Component {
         <Form/>
         <PizzaPrice/>
         <br/>
-        <button className="submitbutton" onClick={this.handleSubmit}>PLACE ORDER</button>
-      </div>
+        </div>
     );
   }
 }

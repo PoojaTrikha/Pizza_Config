@@ -75,7 +75,8 @@ class CheckBox extends Component {
                             )
                         })}
                     </div><br/>
-                    <button> type="submit" label="Add Selected Toppings"</button>
+                    <button type="submit">Add Toppings</button>
+                    
                 </form>
             </div>
         )
