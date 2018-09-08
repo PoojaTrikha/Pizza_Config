@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import {sauce} from '../data'
-import GetSelectedSauce from '../actions/GetSelectedSauce'
+import Sauces from '../actions/Sauces'
 import '../styles/PizzaStyle.css'
 
 class Sauce extends Component {
@@ -20,7 +20,7 @@ class Sauce extends Component {
 
         this
             .props
-            .GetSelectedSauce(event.target.title, event.target.value)
+            .Sauces(event.target.title, event.target.value)
     }
 
     render() {
@@ -62,4 +62,4 @@ class Sauce extends Component {
     }
 }
 
-export default connect(null, {GetSelectedSauce})(Sauce)
+export default connect(null, {Sauces})(Sauce)
