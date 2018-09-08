@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import TurboChecked from '../actions/TurboDelivery'
-import '../styles/PizzaStyle.css'
+
 
  class TurboDroneDelivery extends Component {
 

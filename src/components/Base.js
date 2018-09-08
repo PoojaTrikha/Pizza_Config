@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import {baseprice} from '../data'
 import Bases from '../actions/Bases'
-import '../styles/PizzaStyle.css'
+
 
 class Base extends Component {
 

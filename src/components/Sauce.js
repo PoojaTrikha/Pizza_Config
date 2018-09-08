@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import {sauceprice} from '../data'
 import Sauces from '../actions/Sauces'
-import '../styles/PizzaStyle.css'
+
 
 class Sauce extends Component {
 
