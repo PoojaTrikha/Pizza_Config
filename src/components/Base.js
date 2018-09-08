@@ -39,7 +39,7 @@ class Base extends Component {
                         {baseprice.map(pizzabase => {
                             return (
                                 <tbody>
-                                    <tr key={pizzabase.id}>
+                                    <tr>
                                         <td >
                                         <input value={pizzabase.price} name={'base'} type={'radio'} onChange={this.handleChange}/></td>
                                         <td>{pizzabase.id}</td>
