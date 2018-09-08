@@ -1,7 +1,7 @@
-import {UPDATE_TOPPINGS} from './index'
+import {UPDATETOPPINGS} from './index'
 
 export default function Toppings(selectedvalue) {
 
-    return {type: UPDATE_TOPPINGS, payload: selectedvalue}
+    return {type: UPDATETOPPINGS, payload: selectedvalue}
 
 }

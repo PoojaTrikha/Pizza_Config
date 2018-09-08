@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import {toppings} from '../data'
-import GetSelectedToppings from '../actions/GetSelectedToppings'
+import Toppings from '../actions/Toppings'
 import RaiseButton from 'material-ui/RaisedButton'
 const buttonStyle = {
     margin: 12
@@ -49,7 +49,7 @@ class CheckBox extends Component {
         event.preventDefault()
         this
             .props
-            .GetSelectedToppings(this.state.checkedtoppings)
+            .Toppings(this.state.checkedtoppings)
 
     }
 
@@ -87,4 +87,4 @@ class CheckBox extends Component {
     }
 }
 
-export default connect(null, {GetSelectedToppings})(CheckBox)
+export default connect(null, {Toppings})(CheckBox)

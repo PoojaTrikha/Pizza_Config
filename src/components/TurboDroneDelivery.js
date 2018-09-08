@@ -16,7 +16,6 @@ import '../styles/PizzaStyle.css'
     
     }
     
-    
     handleChange(event) {
 
         this.setState(turbochecked => ({
@@ -32,7 +31,7 @@ import '../styles/PizzaStyle.css'
             <div>
                 <label className="turbo-label">Turbo Drone Delivery?</label>
                 <input type={'checkbox'} onChange={this.handleChange}/>
-                <button onClick={this.handleSubmit}>Submit Order</button>
+               
 
             </div>
         )

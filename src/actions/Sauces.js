@@ -1,7 +1,7 @@
-import {UPDATE_SAUCE} from './index'
+import {UPDATESAUCE} from './index'
 
 export default function Sauces(selectedsauce,price) {
 
-    return {type: UPDATE_SAUCE, payload: {selectedsauce,price}}
+    return {type: UPDATESAUCE, payload: {selectedsauce,price}}
 
 }

@@ -3,30 +3,27 @@ import Base from './Base'
 import Sauce from './Sauce'
 import CheckBox from './CheckBox'
 import {connect} from 'react-redux'
-import GetSelectedToppings from '../actions/GetSelectedToppings'
-import TurboDrone from './TurboDrone'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import Toppings from '../actions/Toppings'
+import TurboDroneDelivery from './TurboDroneDelivery'
+
 
 class PizzaForm extends Component{
 
 
 render() {
     return (
-        <MuiThemeProvider>
-        <form className="container" >
-            <h3>Select your Pizza!!!!</h3>
-            <br/>
+        <form>
             <Base/>
             <br/>
             <Sauce />
             <br/>
             <CheckBox  />
             <br/>
-            <TurboDrone />
+            <TurboDroneDelivery />
             <br/>
         </form>
-         </MuiThemeProvider>
+        
     )}
 }
 
-export default connect (null,{GetSelectedToppings})(PizzaForm)
+export default connect (null,{Toppings})(PizzaForm)

@@ -1,6 +1,6 @@
-import {UPDATE_BASE} from '../actions/index'
-import {UPDATE_SAUCE} from '../actions/index'
-import {UPDATE_TOPPINGS} from '../actions/index'
+import {UPDATEBASE} from '../actions/index'
+import {UPDATESAUCE} from '../actions/index'
+import {UPDATETOPPINGS} from '../actions/index'
 import {DELIVERY} from '../actions/index'
 
 const initialState = {
@@ -17,7 +17,7 @@ const initialState = {
 export default function (state = initialState, {type, payload}) {
  
     switch (type) {
-        case UPDATE_BASE:
+        case UPDATEBASE:
             {
 
                 return {
@@ -27,7 +27,7 @@ export default function (state = initialState, {type, payload}) {
                 }
             }
 
-        case UPDATE_SAUCE:
+        case UPDATESAUCE:
             {
                 return {
                     ...state,
@@ -36,7 +36,7 @@ export default function (state = initialState, {type, payload}) {
                 }
             }
 
-        case UPDATE_TOPPINGS:
+        case UPDATETOPPINGS:
             {
                 return {
                     ...state,
