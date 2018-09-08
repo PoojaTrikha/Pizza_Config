@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import {base} from '../data'
-import GetSelectedBase from '../actions/GetSelectedBase'
+import Bases from '../actions/Bases'
 import '../styles/PizzaStyle.css'
 
 class Base extends Component {
@@ -22,7 +22,7 @@ class Base extends Component {
 
         this
             .props
-            .GetSelectedBase(event.target.title, event.target.value)
+            .Bases(event.target.title, event.target.value)
     }
 
     render() {
@@ -64,4 +64,4 @@ class Base extends Component {
     }
 }
 
-export default connect(null, {GetSelectedBase})(Base)
+export default connect(null, {Bases})(Base)

@@ -13,10 +13,6 @@
     padding-left:10px;
 }
 
-
-  
- 
-
   table{
     border-collapse: separate;
     border-spacing: 100px 0;
@@ -34,12 +30,3 @@
     font-family:sans-serif;
   }
 
-
-
-  .turbo-label{
-      font-size:18px
-  }
-
-  .toppings-types{
-      font-size: 18px
-  }
