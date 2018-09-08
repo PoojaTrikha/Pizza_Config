@@ -28,10 +28,10 @@ class Base extends Component {
     render() {
         return (
             <div>
-                <label className="base-label">Select your base</label>
+                <label>Select your base</label>
                 <div>
                     <br/>
-                    <table className="table-style-three">
+                    <table>
                         <thead>
                                 <th>Name</th>
                                 <th>Price</th>

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import PizzaForm from './components/PizzaForm'
+import Form from './components/Form'
 import PizzaPrice from './components/PizzaPrice'
 import './styles/PizzaStyle.css'
 import logo from './image/pizza.jpg';
@@ -19,13 +19,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
         <img src={pics} alt =""/>
         <h1> New Age Pizza</h1>
-
         <h1 className="App-title">Welcome to NewAgePizza</h1>
-
-        <PizzaForm/>
+        <Form/>
         <PizzaPrice/>
         <br/>
         <button className="submitbutton" onClick={this.handleSubmit}>PLACE ORDER</button>
