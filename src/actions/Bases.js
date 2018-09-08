@@ -1,7 +1,7 @@
 import {UPDATEBASE} from './index'
 
-export default function Bases(selectedbase,price) {
+export default function Bases(baseSelection,price) {
 
-    return {type: UPDATEBASE, payload: {selectedbase,price}}
+    return {type: UPDATEBASE, payload: {baseSelection,price}}
 
 }

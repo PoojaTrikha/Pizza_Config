@@ -1,7 +1,7 @@
 import {UPDATETOPPINGS} from './index'
 
-export default function Toppings(selectedvalue) {
+export default function Toppings(valueSelection) {
 
-    return {type: UPDATETOPPINGS, payload: selectedvalue}
+    return {type: UPDATETOPPINGS, payload: valueSelection}
 
 }
