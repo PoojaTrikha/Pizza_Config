@@ -32,7 +32,9 @@ class Base extends Component {
                 <div>
                     <br/>
                     <table>
-                        <thead>
+                        <thead>   
+                                <th></th>
+                                <th>SR.NO</th>
                                 <th>Name</th>
                                 <th>Price</th>
                            
@@ -42,13 +44,7 @@ class Base extends Component {
                                 <tbody>
                                     <tr key={pizzabase.id}>
                                         <td >
-                                            <input
-                                                key={pizzabase.id}
-                                                value={pizzabase.price}
-                                                title={pizzabase.name}
-                                                name={'base'}
-                                                type={'radio'}
-                                                onChange={this.handleChange}/></td>
+                                         <input value={pizzabase.price} type={'radio'} onChange={this.handleChange}/></td>
                                         <td>{pizzabase.id}</td>
                                         <td>{pizzabase.name}</td>
                                         <td>&euro; {pizzabase.price}</td>

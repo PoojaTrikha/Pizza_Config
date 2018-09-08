@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './App.css';
-//import Form from './components/Form'
 import Base from './components/Base'
 import Sauce from './components/Sauce'
 import CheckBox from './components/CheckBox'
