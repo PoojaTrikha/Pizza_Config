@@ -2,10 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import {toppings} from '../data'
 import Toppings from '../actions/Toppings'
-import RaiseButton from 'material-ui/RaisedButton'
-const buttonStyle = {
-    margin: 12
-}
+
 
 class CheckBox extends Component {
     constructor(props)
@@ -35,10 +32,8 @@ class CheckBox extends Component {
                 checked: event.target.checked
             })
         } else {
-            const filterdarray = this
-                .state
-                .checkedtoppings
-                .filter(eachtopping => eachtopping !== event.target.value)
+            const filterdarray = this.state.checkedtoppings
+            .filter(eachtopping => eachtopping !== event.target.value)
             this.setState({checkedtoppings: filterdarray, checked: event.target.checked})
 
         }
@@ -47,34 +42,25 @@ class CheckBox extends Component {
 
     handleSubmit(event) {
         event.preventDefault()
-        this
-            .props
-            .Toppings(this.state.checkedtoppings)
+        this.props.Toppings(this.state.checkedtoppings)
 
     }
 
     render() {
         return (
             <div>
-                <form
-                    onSubmit={this
-                    .handleSubmit
-                    .bind(this)}>
-                    <label className="base-label">Select your toppings maximum 3 allowed</label>
+                <form onSubmit={this.handleSubmit.bind(this)}>
+                    <label>Select your toppings maximum 3 allowed</label>
                     <div>
-                        <br/> {toppings.map(pizzatopping => {
+                        {toppings.map(pizzatopping => {
                             return (
 
-                                <label className="toppings-label" key={pizzatopping}>
-                                    <input className="toppings-types"
-                                        value={pizzatopping}
-                                        type={'checkbox'}
-                                        options={this.state.checkedvalue}
-                                        onChange={this.handleChange}/>{pizzatopping}
+                                <label>
+                                    <input value={pizzatopping} type={'checkbox'} options={this.state.checkedvalue} onChange={this.handleChange}/>{pizzatopping}
                                 </label>
                             )
                         })}
-                    </div><br/>
+                    </div>
                     <button type="submit">Add Toppings</button>
                     
                 </form>
