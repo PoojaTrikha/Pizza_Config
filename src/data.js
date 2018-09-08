@@ -36,6 +36,6 @@ export const toppings = [
     'Olives (green)',
     'Red onion',
     'Spinach',
-    'Cherry Tomatos'
+    'Cherry Tomatoes'
   
 ]
