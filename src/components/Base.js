@@ -15,21 +15,18 @@ class Base extends Component {
         this.state = {}
     }
 
-    
-    handleChange(event) {
-
-        this.setState({id: event.target.key, name: event.target.title, price: event.target.value})
-
-        this
-            .props
-            .Bases(event.target.title, event.target.value)
+ handleChange(event) {
+ this.setState({id: event.target.key, name: event.target.title, price: event.target.value})
+ this
+     .props
+     .Bases(event.target.title, event.target.value)
     }
 
     render() {
         return (
             <div>
                 <label>Select your base</label>
-                <div>
+                
                     <br/>
                     <table>
                         <thead>   
@@ -44,7 +41,7 @@ class Base extends Component {
                                 <tbody>
                                     <tr key={pizzabase.id}>
                                         <td >
-                                         <input value={pizzabase.price} type={'radio'} onChange={this.handleChange}/></td>
+                                        <input value={pizzabase.price} name={'base'} type={'radio'} onChange={this.handleChange}/></td>
                                         <td>{pizzabase.id}</td>
                                         <td>{pizzabase.name}</td>
                                         <td>&euro; {pizzabase.price}</td>
@@ -55,7 +52,7 @@ class Base extends Component {
 }
                     </table>
                 </div>
-            </div>
+            
         )
     }
 }
