@@ -16,19 +16,19 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <img src={pics} alt =""/>
+        <img src={pics} alt="" />
         <h1> New Age Pizza</h1>
         <h1 className="App-title">Welcome to NewAgePizza</h1>
-        <Base/>
-         <br/>
-         <Sauce />
-         <br/>
-         <CheckBox  />
-         <br/>
-         <TurboDroneDelivery />
-        <PizzaPrice/>
-        <br/>
-        </div>
+        <Base />
+        <br />
+        <Sauce />
+        <br />
+        <CheckBox />
+        <br />
+        <TurboDroneDelivery />
+        <PizzaPrice />
+        <br />
+      </div>
     );
   }
 }
